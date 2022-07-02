@@ -18,6 +18,8 @@ namespace Home_work_5._3
                 Console.Write($"Введите координату точки Z{i}: ");
                 z[i] = Convert.ToInt32(Console.ReadLine());
             }
+            double distance = Math.Round(Math.Sqrt(Math.Pow(x[1]-x[0],2) + Math.Pow(y[1]-y[0],2) + Math.Pow(z[1]-z[0],2)),2);
+            Console.WriteLine($"Расстояние между точками: {distance}");
         }
     }
 }
